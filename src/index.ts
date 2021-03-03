@@ -9,10 +9,10 @@ const port = process.env.PORT || 5000;
 const url = process.env.MONGODB_URI || "";
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "client", "build")));
+app.use(express.static(path.join(__dirname, "..", "client", "build")));
 app.use("/api/transactions", transactionRoutes);
 app.get("*", (_, res) => {
-	res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+	res.sendFile(path.join(__dirname, "..", "client", "build", "index.html"));
 });
 
 connect(url, {
