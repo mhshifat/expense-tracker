@@ -1,0 +1,151 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	background: #f2f5f7;
+}
+
+.main {
+	padding: 100px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+button {
+	border: 1px solid #ddd;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+button:disabled {
+	background: #ddd !important;
+	border: 1px solid #ddd !important;
+}
+
+table {
+	margin-top: 20px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table tr {
+	border: 1px solid #ddd;
+}
+
+table tr td {
+	padding: 15px;
+}
+
+table tr td span {
+	display: flex;
+	justify-content: flex-end;
+}
+
+table tr td span button:first-child {
+	margin-right: 10px;
+}
+
+.empty {
+	display: block;
+	height: 20px;
+	border: none;
+}
+
+.modal-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal {
+	width: 400px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 0 10px -10px rgba(0, 0, 0, 0.06);
+	padding: 20px;
+}
+
+.modal-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+
+form {
+	width: 100%;
+	height: 100%;
+}
+
+form input,
+form textarea,
+form select {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin-top: 20px;
+	border: 1px solid #ddd;
+	padding: 10px;
+	outline: none;
+	font-family: inherit;
+	border-radius: 2px;
+	background: transparent;
+	appearance: none;
+}
+
+.form-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.form-buttons button {
+	width: auto;
+	padding: 5px 10px;
+}
+
+.form-buttons button:last-child {
+	background: slateblue;
+	color: #fff;
+	border-color: slateblue;
+}
+
+.error {
+	background: salmon;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1.6;
+	padding: 10px 20px;
+	border-radius: 2px;
+}
+
+.catagory {
+	text-transform: capitalize;
+}
